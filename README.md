@@ -19,7 +19,7 @@
 - Confira o desafio [clicando aqui](https://github.com/PicPay/picpay-desafio-backend).
 
 ## Como interagir com o banco de dados?
-- Utilizamos o [Beekeeper Community](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.1.13).
+- Utilizei o [Beekeeper Community](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.1.13).
 
 ## Como interagir com a API?
 - Utilizei o [Httpie](https://github.com/httpie).
