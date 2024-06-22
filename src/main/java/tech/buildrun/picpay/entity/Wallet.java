@@ -3,6 +3,7 @@ package tech.buildrun.picpay.entity;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
+import java.util.InputMismatchException;
 
 @Entity
 @Table(name = "tb_wallet")
@@ -41,6 +42,8 @@ public class Wallet {
         this.password = password;
         this.walletType = walletType;
     }
+
+
 
     public boolean isTransferAllowedForWalletType() {
         return this.walletType.equals(WalletType.Enum.USER.get());
