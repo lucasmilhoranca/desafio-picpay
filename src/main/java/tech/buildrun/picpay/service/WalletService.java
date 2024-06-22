@@ -51,14 +51,19 @@ public class WalletService {
                 .stream()
                 .map(transfer -> new TransferExtractDto(
                         transfer.getId(),
-                        new WalletExtractDto(transfer.getSender().getFullName(), transfer.getSender().getCpfCnpj()),
-                        new WalletExtractDto(transfer.getReceiver().getFullName(), transfer.getReceiver().getCpfCnpj()),
+                        new WalletExtractDto(transfer.getSender().getId(),
+                                transfer.getSender().getFullName(),
+                                transfer.getSender().getCpfCnpj()),
+                        new WalletExtractDto(transfer.getReceiver().getId(),
+                                transfer.getReceiver().getFullName(),
+                                transfer.getReceiver().getCpfCnpj()),
                         transfer.getValue(),
                         walletId.equals(transfer.getSender().getId()) ? "debit" : "credit"
                 ))
                 .toList();
 
         return new ExtractDto(
+                walletId,
                 wallet.get().getFullName(),
                 wallet.get().getCpfCnpj(),
                 wallet.get().getBalance(),
