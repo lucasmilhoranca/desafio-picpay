@@ -2,7 +2,6 @@ package tech.buildrun.picpay.service;
 
 import org.springframework.stereotype.Service;
 import tech.buildrun.picpay.controller.dto.*;
-import tech.buildrun.picpay.entity.Transfer;
 import tech.buildrun.picpay.entity.Wallet;
 import tech.buildrun.picpay.exception.InvalidCpfCnpjException;
 import tech.buildrun.picpay.exception.WalletDataAlreadyExistsException;
@@ -11,7 +10,6 @@ import tech.buildrun.picpay.repository.TransferRepository;
 import tech.buildrun.picpay.repository.WalletRepository;
 import tech.buildrun.picpay.utils.ValidaCpfCnpj;
 
-import java.util.List;
 
 @Service
 public class WalletService {

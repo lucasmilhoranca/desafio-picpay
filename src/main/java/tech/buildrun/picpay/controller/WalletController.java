@@ -5,12 +5,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tech.buildrun.picpay.controller.dto.CreateWalletDto;
 import tech.buildrun.picpay.controller.dto.ExtractDto;
-import tech.buildrun.picpay.controller.dto.TransferExtractDto;
-import tech.buildrun.picpay.entity.Transfer;
 import tech.buildrun.picpay.entity.Wallet;
 import tech.buildrun.picpay.service.WalletService;
-
-import java.util.List;
 
 @RestController
 public class WalletController {
