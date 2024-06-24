@@ -50,12 +50,6 @@
 
 ### Lista de tarefas:
 
-**Introdução**:
-
-- [x]  Qual é o desafio que vamos resolver?
-
----
-
 **Comunicação com o banco e dados**:
 
 - [x]  Iniciando o projeto Java (JPA, MySQL, Validator, OpenFeign)
@@ -74,6 +68,7 @@
 - [x]  Criar tratamento de exceções com ProblemDetails e RestExceptionHandler
 - [x]  Criar validação de dados de entrada
 - [x]  Ajustar tratamento de exceções
+- [x]  Extrato de uma Wallet
 - [x]  Testar a API e validar no banco de dados
 
 ---
@@ -92,9 +87,3 @@
 - [x]  5° Enviar notificação para o recebedor (CompletableFuture)
 - [x]  Validar o tratamento de exceções com RestExceptionHandler
 - [x]  Testar a API e validar no banco de dados
-
----
-
-**Ajuste final**
-
-- [x]  Aplicar logging no projeto com SLF4J
